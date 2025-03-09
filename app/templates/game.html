@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="game-container">
+    <div class="game-screen">
+        <div id="scene-description"></div>
+        <div id="game-actions"></div>
+    </div>
+    <div class="inventory-panel">
+        <h3>Inventory</h3>
+        <div id="inventory-items"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+{% endblock %}

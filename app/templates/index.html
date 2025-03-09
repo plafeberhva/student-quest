@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="welcome-screen">
+    <h1>Police Quest Web Adventure</h1>
+    <p>Welcome to the streets of Lytton. Your duty as Officer Sonny Bonds begins now.</p>
+    <a href="{{ url_for('main.game') }}" class="start-button">Start Game</a>
+</div>
+{% endblock %}
